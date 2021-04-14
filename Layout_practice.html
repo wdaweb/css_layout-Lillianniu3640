@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arapey&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: linear-gradient(transparent 70%, rgba(0, 0, 0, 0.6)120%);
+            position: relative;
+        }
+
+        div {
+            /* border: 1px solid black;
+            /* height: 50%;
+            width: 50%; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+
+        }
+
+        section {
+            width: 200px;
+            height: 350px;
+            /* border: 1px solid lightgray; */
+            display: inline-block;
+            margin: -2px;
+            position: relative;
+            font-size: 8px;
+            font-family: 'Arapey', serif;
+            color: gray;
+
+
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -150%);
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 60px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -100%);
+            text-align: left;
+        }
+
+        img {
+            border-radius: 50%;
+
+        }
+
+        p {
+            margin: -40px;
+
+        }
+
+        p:hover span.a {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            transform: translate(10px, -10px);
+            background: linear-gradient(270deg, rgb(212, 45, 45), rgb(83, 4, 4));
+            animation: linemove 0.5s forwards;
+        }
+
+        p:hover span.b {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            transform: translate(-40px, 28px);
+            background: linear-gradient(90deg, rgb(38, 35, 206), rgb(64, 201, 219));
+            animation: linemove2 0.5s forwards;
+        }
+
+        p:hover span.c {
+            font-size: 14px;
+            color: rgb(187, 132, 122);
+            font-family: 'Homemade Apple', cursive;
+
+        }
+
+        p:hover span.d {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 8px;
+            transform: translate(-10px, -10px);
+            background: rgba(225, 225, 0, 0.3);
+            animation: linemove 0.5s forwards;
+        }
+
+        /* p:hover span.e {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 8px;
+            transform: translate(-10px, -8px);
+            background: rgba(225, 225, 0, 0.3);
+            animation: linemove 0.5s forwards;
+        } */
+
+        .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(50%, 1100%);
+            color: rgb(203, 218, 217);
+            text-decoration: underline 3px solid rgb(203, 218, 217);
+
+
+        }
+
+        .btn:hover {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(50%, 1100%);
+            color: lightseagreen;
+            text-decoration: underline 3px solid lightsalmon;
+            cursor: pointer;
+        }
+
+
+        .book1 {
+            background: linear-gradient(to right, white 85%, rgba(102, 101, 101, 0.7)180%);
+            box-shadow: 2px 5px 8px rgba(48, 47, 47, 0.3);
+            -webkit-box-reflect: below -1px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+
+        }
+
+        .book2 {
+            background: linear-gradient(to right, rgba(168, 167, 167, 0.3) -25%, white, white, white, rgba(148, 147, 147, 0.4) 125%);
+            box-shadow: 2px 5px 8px rgba(48, 47, 47, 0.3);
+            -webkit-box-reflect: below -1px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+        }
+
+        .book3 {
+            background: linear-gradient(to right, rgba(177, 175, 175, 0.3) -15%, white 10%);
+            box-shadow: 2px 5px 8px rgba(48, 47, 47, 0.3);
+            -webkit-box-reflect: below -1px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+
+        }
+
+        @keyframes linemove {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes linemove2 {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 65%;
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <div>
+        <section class=" book1">
+            <h1><img src="https://picsum.photos/75/75/?random=1"></h1>
+
+            <h2>
+                <p>Tom Jones is a classic English novel that captures the spirit of its age and whose famous characters
+                    have come to represent Augustan societyin all its loquacious, tu.Laurence Sterne’s vivid novel
+                    caused delight and consternation when it first appeared and has lost little of its original bite.
+                    <span class="a"></span>
+                    <span class="b"></span>
+                </p>
+            </h2>
+            <a class="btn">Read More</a>
+        </section>
+
+        <section class=" book2 ">
+            <h1><img src="https://picsum.photos/75/75/?random=2"></h1>
+
+            <h2>
+                <p>A satirical masterpiece that’s never been out of print, Jonathan Swift’s Gulliver’s Travels comes
+                    third in our list of the <span class="c">best novels</span> written in English.By the end of the
+                    19th century, no book in
+                    English literary history had enjoyed more editions, spin-offs and translations.
+
+                </p>
+            </h2>
+            <a class="btn">Read More</a>
+        </section>
+        <section class=" book2 ">
+            <h1><img src="https://picsum.photos/75/75/?random=3"></h1>
+
+            <h2>
+                <p>The great pleasure of Nightmare Abbey, which was inspired by Thomas Love Peacock’s friendship with
+                    Shelley, lies in the delight the author takes in poking fun at the romantic movement.Edgar Allan
+                    Poe’s only novel – a classic adventure story with supernatural elements
+                    <span class="d"></span>
+                </p>
+            </h2>
+            <a class="btn">Read More</a>
+        </section>
+        <section class=" book3 ">
+            <h1><img src="https://picsum.photos/75/75/?random=4"></h1>
+
+            <h2>
+                <p>The future prime minister displayed flashes of brilliance that equalled the greatest Victorian
+                    novelists.Charlotte Brontë’s erotic, gothic masterpiece became the sensation of Victorian England.
+                    Its great breakthrough was its intimate dialogue with the reader.by Charlotte Brontë
+                    <!-- <span class="e">Next page</span> -->
+                </p>
+            </h2>
+            <a class="btn">Read More</a>
+        </section>
+    </div>
+
+</body>
+
+</html>
